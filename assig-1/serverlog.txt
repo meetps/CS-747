@@ -1,0 +1,804 @@
+Waiting for client to connect.
+Client connected.
+Received message: 0.
+Sending reward 0; pulls = 1.
+Received message: 1.
+Sending reward 0; pulls = 2.
+Received message: 2.
+Sending reward 1; pulls = 3.
+Received message: 3.
+Sending reward 1; pulls = 4.
+Received message: 4.
+Sending reward 0; pulls = 5.
+Received message: 5.
+Sending reward 1; pulls = 6.
+Received message: 6.
+Sending reward 1; pulls = 7.
+Received message: 0.
+Sending reward 1; pulls = 8.
+Received message: 1.
+Sending reward 1; pulls = 9.
+Received message: 2.
+Sending reward 1; pulls = 10.
+Received message: 3.
+Sending reward 1; pulls = 11.
+Received message: 4.
+Sending reward 0; pulls = 12.
+Received message: 5.
+Sending reward 1; pulls = 13.
+Received message: 6.
+Sending reward 1; pulls = 14.
+Received message: 0.
+Sending reward 0; pulls = 15.
+Received message: 1.
+Sending reward 0; pulls = 16.
+Received message: 2.
+Sending reward 1; pulls = 17.
+Received message: 3.
+Sending reward 1; pulls = 18.
+Received message: 4.
+Sending reward 0; pulls = 19.
+Received message: 5.
+Sending reward 0; pulls = 20.
+Received message: 6.
+Sending reward 1; pulls = 21.
+Received message: 0.
+Sending reward 0; pulls = 22.
+Received message: 1.
+Sending reward 0; pulls = 23.
+Received message: 2.
+Sending reward 1; pulls = 24.
+Received message: 3.
+Sending reward 0; pulls = 25.
+Received message: 4.
+Sending reward 0; pulls = 26.
+Received message: 5.
+Sending reward 0; pulls = 27.
+Received message: 6.
+Sending reward 1; pulls = 28.
+Received message: 0.
+Sending reward 0; pulls = 29.
+Received message: 1.
+Sending reward 0; pulls = 30.
+Received message: 2.
+Sending reward 1; pulls = 31.
+Received message: 3.
+Sending reward 0; pulls = 32.
+Received message: 4.
+Sending reward 0; pulls = 33.
+Received message: 5.
+Sending reward 1; pulls = 34.
+Received message: 6.
+Sending reward 1; pulls = 35.
+Received message: 0.
+Sending reward 0; pulls = 36.
+Received message: 1.
+Sending reward 0; pulls = 37.
+Received message: 2.
+Sending reward 1; pulls = 38.
+Received message: 3.
+Sending reward 1; pulls = 39.
+Received message: 4.
+Sending reward 0; pulls = 40.
+Received message: 5.
+Sending reward 0; pulls = 41.
+Received message: 6.
+Sending reward 1; pulls = 42.
+Received message: 0.
+Sending reward 0; pulls = 43.
+Received message: 1.
+Sending reward 0; pulls = 44.
+Received message: 2.
+Sending reward 1; pulls = 45.
+Received message: 3.
+Sending reward 1; pulls = 46.
+Received message: 4.
+Sending reward 0; pulls = 47.
+Received message: 5.
+Sending reward 0; pulls = 48.
+Received message: 6.
+Sending reward 1; pulls = 49.
+Received message: 0.
+Sending reward 0; pulls = 50.
+Received message: 1.
+Sending reward 0; pulls = 51.
+Received message: 2.
+Sending reward 1; pulls = 52.
+Received message: 3.
+Sending reward 1; pulls = 53.
+Received message: 4.
+Sending reward 0; pulls = 54.
+Received message: 5.
+Sending reward 0; pulls = 55.
+Received message: 6.
+Sending reward 1; pulls = 56.
+Received message: 0.
+Sending reward 0; pulls = 57.
+Received message: 1.
+Sending reward 1; pulls = 58.
+Received message: 2.
+Sending reward 0; pulls = 59.
+Received message: 3.
+Sending reward 1; pulls = 60.
+Received message: 4.
+Sending reward 0; pulls = 61.
+Received message: 5.
+Sending reward 0; pulls = 62.
+Received message: 6.
+Sending reward 1; pulls = 63.
+Received message: 0.
+Sending reward 0; pulls = 64.
+Received message: 1.
+Sending reward 1; pulls = 65.
+Received message: 2.
+Sending reward 1; pulls = 66.
+Received message: 3.
+Sending reward 0; pulls = 67.
+Received message: 4.
+Sending reward 0; pulls = 68.
+Received message: 5.
+Sending reward 0; pulls = 69.
+Received message: 6.
+Sending reward 0; pulls = 70.
+Received message: 0.
+Sending reward 0; pulls = 71.
+Received message: 1.
+Sending reward 0; pulls = 72.
+Received message: 2.
+Sending reward 0; pulls = 73.
+Received message: 3.
+Sending reward 1; pulls = 74.
+Received message: 4.
+Sending reward 0; pulls = 75.
+Received message: 5.
+Sending reward 0; pulls = 76.
+Received message: 6.
+Sending reward 1; pulls = 77.
+Received message: 0.
+Sending reward 0; pulls = 78.
+Received message: 1.
+Sending reward 1; pulls = 79.
+Received message: 2.
+Sending reward 1; pulls = 80.
+Received message: 3.
+Sending reward 1; pulls = 81.
+Received message: 4.
+Sending reward 0; pulls = 82.
+Received message: 5.
+Sending reward 1; pulls = 83.
+Received message: 6.
+Sending reward 0; pulls = 84.
+Received message: 0.
+Sending reward 0; pulls = 85.
+Received message: 1.
+Sending reward 1; pulls = 86.
+Received message: 2.
+Sending reward 0; pulls = 87.
+Received message: 3.
+Sending reward 1; pulls = 88.
+Received message: 4.
+Sending reward 0; pulls = 89.
+Received message: 5.
+Sending reward 1; pulls = 90.
+Received message: 6.
+Sending reward 1; pulls = 91.
+Received message: 0.
+Sending reward 0; pulls = 92.
+Received message: 1.
+Sending reward 1; pulls = 93.
+Received message: 2.
+Sending reward 1; pulls = 94.
+Received message: 3.
+Sending reward 0; pulls = 95.
+Received message: 4.
+Sending reward 0; pulls = 96.
+Received message: 5.
+Sending reward 1; pulls = 97.
+Received message: 6.
+Sending reward 1; pulls = 98.
+Received message: 0.
+Sending reward 0; pulls = 99.
+Received message: 1.
+Sending reward 1; pulls = 100.
+Received message: 2.
+Sending reward 1; pulls = 101.
+Received message: 3.
+Sending reward 0; pulls = 102.
+Received message: 4.
+Sending reward 0; pulls = 103.
+Received message: 5.
+Sending reward 0; pulls = 104.
+Received message: 6.
+Sending reward 1; pulls = 105.
+Received message: 0.
+Sending reward 0; pulls = 106.
+Received message: 1.
+Sending reward 1; pulls = 107.
+Received message: 2.
+Sending reward 1; pulls = 108.
+Received message: 3.
+Sending reward 0; pulls = 109.
+Received message: 4.
+Sending reward 0; pulls = 110.
+Received message: 5.
+Sending reward 0; pulls = 111.
+Received message: 6.
+Sending reward 0; pulls = 112.
+Received message: 0.
+Sending reward 0; pulls = 113.
+Received message: 1.
+Sending reward 0; pulls = 114.
+Received message: 2.
+Sending reward 1; pulls = 115.
+Received message: 3.
+Sending reward 1; pulls = 116.
+Received message: 4.
+Sending reward 0; pulls = 117.
+Received message: 5.
+Sending reward 1; pulls = 118.
+Received message: 6.
+Sending reward 1; pulls = 119.
+Received message: 0.
+Sending reward 1; pulls = 120.
+Received message: 1.
+Sending reward 1; pulls = 121.
+Received message: 2.
+Sending reward 1; pulls = 122.
+Received message: 3.
+Sending reward 0; pulls = 123.
+Received message: 4.
+Sending reward 0; pulls = 124.
+Received message: 5.
+Sending reward 1; pulls = 125.
+Received message: 6.
+Sending reward 0; pulls = 126.
+Received message: 0.
+Sending reward 0; pulls = 127.
+Received message: 1.
+Sending reward 0; pulls = 128.
+Received message: 2.
+Sending reward 1; pulls = 129.
+Received message: 3.
+Sending reward 1; pulls = 130.
+Received message: 4.
+Sending reward 0; pulls = 131.
+Received message: 5.
+Sending reward 0; pulls = 132.
+Received message: 6.
+Sending reward 1; pulls = 133.
+Received message: 0.
+Sending reward 0; pulls = 134.
+Received message: 1.
+Sending reward 0; pulls = 135.
+Received message: 2.
+Sending reward 1; pulls = 136.
+Received message: 3.
+Sending reward 0; pulls = 137.
+Received message: 4.
+Sending reward 0; pulls = 138.
+Received message: 5.
+Sending reward 0; pulls = 139.
+Received message: 6.
+Sending reward 1; pulls = 140.
+Received message: 0.
+Sending reward 0; pulls = 141.
+Received message: 1.
+Sending reward 0; pulls = 142.
+Received message: 2.
+Sending reward 1; pulls = 143.
+Received message: 3.
+Sending reward 1; pulls = 144.
+Received message: 4.
+Sending reward 0; pulls = 145.
+Received message: 5.
+Sending reward 1; pulls = 146.
+Received message: 6.
+Sending reward 0; pulls = 147.
+Received message: 0.
+Sending reward 0; pulls = 148.
+Received message: 1.
+Sending reward 1; pulls = 149.
+Received message: 2.
+Sending reward 1; pulls = 150.
+Received message: 3.
+Sending reward 1; pulls = 151.
+Received message: 4.
+Sending reward 0; pulls = 152.
+Received message: 5.
+Sending reward 0; pulls = 153.
+Received message: 6.
+Sending reward 1; pulls = 154.
+Received message: 0.
+Sending reward 1; pulls = 155.
+Received message: 1.
+Sending reward 1; pulls = 156.
+Received message: 2.
+Sending reward 1; pulls = 157.
+Received message: 3.
+Sending reward 0; pulls = 158.
+Received message: 4.
+Sending reward 0; pulls = 159.
+Received message: 5.
+Sending reward 0; pulls = 160.
+Received message: 6.
+Sending reward 0; pulls = 161.
+Received message: 0.
+Sending reward 0; pulls = 162.
+Received message: 1.
+Sending reward 0; pulls = 163.
+Received message: 2.
+Sending reward 0; pulls = 164.
+Received message: 3.
+Sending reward 0; pulls = 165.
+Received message: 4.
+Sending reward 0; pulls = 166.
+Received message: 5.
+Sending reward 0; pulls = 167.
+Received message: 6.
+Sending reward 0; pulls = 168.
+Received message: 0.
+Sending reward 1; pulls = 169.
+Received message: 1.
+Sending reward 1; pulls = 170.
+Received message: 2.
+Sending reward 1; pulls = 171.
+Received message: 3.
+Sending reward 1; pulls = 172.
+Received message: 4.
+Sending reward 0; pulls = 173.
+Received message: 5.
+Sending reward 0; pulls = 174.
+Received message: 6.
+Sending reward 1; pulls = 175.
+Received message: 0.
+Sending reward 0; pulls = 176.
+Received message: 1.
+Sending reward 0; pulls = 177.
+Received message: 2.
+Sending reward 0; pulls = 178.
+Received message: 3.
+Sending reward 1; pulls = 179.
+Received message: 4.
+Sending reward 0; pulls = 180.
+Received message: 5.
+Sending reward 0; pulls = 181.
+Received message: 6.
+Sending reward 1; pulls = 182.
+Received message: 0.
+Sending reward 0; pulls = 183.
+Received message: 1.
+Sending reward 0; pulls = 184.
+Received message: 2.
+Sending reward 1; pulls = 185.
+Received message: 3.
+Sending reward 1; pulls = 186.
+Received message: 4.
+Sending reward 0; pulls = 187.
+Received message: 5.
+Sending reward 1; pulls = 188.
+Received message: 6.
+Sending reward 1; pulls = 189.
+Received message: 0.
+Sending reward 0; pulls = 190.
+Received message: 1.
+Sending reward 0; pulls = 191.
+Received message: 2.
+Sending reward 1; pulls = 192.
+Received message: 3.
+Sending reward 1; pulls = 193.
+Received message: 4.
+Sending reward 1; pulls = 194.
+Received message: 5.
+Sending reward 0; pulls = 195.
+Received message: 6.
+Sending reward 1; pulls = 196.
+Received message: 0.
+Sending reward 0; pulls = 197.
+Received message: 1.
+Sending reward 0; pulls = 198.
+Received message: 2.
+Sending reward 1; pulls = 199.
+Received message: 3.
+Sending reward 0; pulls = 200.
+Received message: 4.
+Sending reward 1; pulls = 201.
+Received message: 5.
+Sending reward 1; pulls = 202.
+Received message: 6.
+Sending reward 0; pulls = 203.
+Received message: 0.
+Sending reward 0; pulls = 204.
+Received message: 1.
+Sending reward 0; pulls = 205.
+Received message: 2.
+Sending reward 0; pulls = 206.
+Received message: 3.
+Sending reward 1; pulls = 207.
+Received message: 4.
+Sending reward 1; pulls = 208.
+Received message: 5.
+Sending reward 0; pulls = 209.
+Received message: 6.
+Sending reward 1; pulls = 210.
+Received message: 0.
+Sending reward 0; pulls = 211.
+Received message: 1.
+Sending reward 0; pulls = 212.
+Received message: 2.
+Sending reward 1; pulls = 213.
+Received message: 3.
+Sending reward 0; pulls = 214.
+Received message: 4.
+Sending reward 0; pulls = 215.
+Received message: 5.
+Sending reward 1; pulls = 216.
+Received message: 6.
+Sending reward 1; pulls = 217.
+Received message: 0.
+Sending reward 1; pulls = 218.
+Received message: 1.
+Sending reward 0; pulls = 219.
+Received message: 2.
+Sending reward 1; pulls = 220.
+Received message: 3.
+Sending reward 0; pulls = 221.
+Received message: 4.
+Sending reward 0; pulls = 222.
+Received message: 5.
+Sending reward 0; pulls = 223.
+Received message: 6.
+Sending reward 0; pulls = 224.
+Received message: 0.
+Sending reward 0; pulls = 225.
+Received message: 1.
+Sending reward 0; pulls = 226.
+Received message: 2.
+Sending reward 1; pulls = 227.
+Received message: 3.
+Sending reward 1; pulls = 228.
+Received message: 4.
+Sending reward 0; pulls = 229.
+Received message: 5.
+Sending reward 0; pulls = 230.
+Received message: 6.
+Sending reward 1; pulls = 231.
+Received message: 0.
+Sending reward 0; pulls = 232.
+Received message: 1.
+Sending reward 0; pulls = 233.
+Received message: 2.
+Sending reward 1; pulls = 234.
+Received message: 3.
+Sending reward 1; pulls = 235.
+Received message: 4.
+Sending reward 0; pulls = 236.
+Received message: 5.
+Sending reward 0; pulls = 237.
+Received message: 6.
+Sending reward 1; pulls = 238.
+Received message: 0.
+Sending reward 0; pulls = 239.
+Received message: 1.
+Sending reward 0; pulls = 240.
+Received message: 2.
+Sending reward 1; pulls = 241.
+Received message: 3.
+Sending reward 1; pulls = 242.
+Received message: 4.
+Sending reward 0; pulls = 243.
+Received message: 5.
+Sending reward 0; pulls = 244.
+Received message: 6.
+Sending reward 1; pulls = 245.
+Received message: 0.
+Sending reward 0; pulls = 246.
+Received message: 1.
+Sending reward 0; pulls = 247.
+Received message: 2.
+Sending reward 1; pulls = 248.
+Received message: 3.
+Sending reward 0; pulls = 249.
+Received message: 4.
+Sending reward 0; pulls = 250.
+Received message: 5.
+Sending reward 0; pulls = 251.
+Received message: 6.
+Sending reward 1; pulls = 252.
+Received message: 0.
+Sending reward 0; pulls = 253.
+Received message: 1.
+Sending reward 1; pulls = 254.
+Received message: 2.
+Sending reward 1; pulls = 255.
+Received message: 3.
+Sending reward 0; pulls = 256.
+Received message: 4.
+Sending reward 0; pulls = 257.
+Received message: 5.
+Sending reward 0; pulls = 258.
+Received message: 6.
+Sending reward 1; pulls = 259.
+Received message: 0.
+Sending reward 0; pulls = 260.
+Received message: 1.
+Sending reward 1; pulls = 261.
+Received message: 2.
+Sending reward 1; pulls = 262.
+Received message: 3.
+Sending reward 0; pulls = 263.
+Received message: 4.
+Sending reward 0; pulls = 264.
+Received message: 5.
+Sending reward 1; pulls = 265.
+Received message: 6.
+Sending reward 1; pulls = 266.
+Received message: 0.
+Sending reward 0; pulls = 267.
+Received message: 1.
+Sending reward 1; pulls = 268.
+Received message: 2.
+Sending reward 1; pulls = 269.
+Received message: 3.
+Sending reward 1; pulls = 270.
+Received message: 4.
+Sending reward 0; pulls = 271.
+Received message: 5.
+Sending reward 0; pulls = 272.
+Received message: 6.
+Sending reward 1; pulls = 273.
+Received message: 0.
+Sending reward 0; pulls = 274.
+Received message: 1.
+Sending reward 0; pulls = 275.
+Received message: 2.
+Sending reward 1; pulls = 276.
+Received message: 3.
+Sending reward 1; pulls = 277.
+Received message: 4.
+Sending reward 0; pulls = 278.
+Received message: 5.
+Sending reward 0; pulls = 279.
+Received message: 6.
+Sending reward 0; pulls = 280.
+Received message: 0.
+Sending reward 0; pulls = 281.
+Received message: 1.
+Sending reward 1; pulls = 282.
+Received message: 2.
+Sending reward 1; pulls = 283.
+Received message: 3.
+Sending reward 0; pulls = 284.
+Received message: 4.
+Sending reward 0; pulls = 285.
+Received message: 5.
+Sending reward 0; pulls = 286.
+Received message: 6.
+Sending reward 1; pulls = 287.
+Received message: 0.
+Sending reward 1; pulls = 288.
+Received message: 1.
+Sending reward 1; pulls = 289.
+Received message: 2.
+Sending reward 1; pulls = 290.
+Received message: 3.
+Sending reward 0; pulls = 291.
+Received message: 4.
+Sending reward 1; pulls = 292.
+Received message: 5.
+Sending reward 0; pulls = 293.
+Received message: 6.
+Sending reward 1; pulls = 294.
+Received message: 0.
+Sending reward 0; pulls = 295.
+Received message: 1.
+Sending reward 0; pulls = 296.
+Received message: 2.
+Sending reward 0; pulls = 297.
+Received message: 3.
+Sending reward 0; pulls = 298.
+Received message: 4.
+Sending reward 0; pulls = 299.
+Received message: 5.
+Sending reward 0; pulls = 300.
+Received message: 6.
+Sending reward 1; pulls = 301.
+Received message: 0.
+Sending reward 1; pulls = 302.
+Received message: 1.
+Sending reward 1; pulls = 303.
+Received message: 2.
+Sending reward 0; pulls = 304.
+Received message: 3.
+Sending reward 1; pulls = 305.
+Received message: 4.
+Sending reward 1; pulls = 306.
+Received message: 5.
+Sending reward 1; pulls = 307.
+Received message: 6.
+Sending reward 1; pulls = 308.
+Received message: 0.
+Sending reward 0; pulls = 309.
+Received message: 1.
+Sending reward 0; pulls = 310.
+Received message: 2.
+Sending reward 1; pulls = 311.
+Received message: 3.
+Sending reward 0; pulls = 312.
+Received message: 4.
+Sending reward 0; pulls = 313.
+Received message: 5.
+Sending reward 0; pulls = 314.
+Received message: 6.
+Sending reward 0; pulls = 315.
+Received message: 0.
+Sending reward 0; pulls = 316.
+Received message: 1.
+Sending reward 0; pulls = 317.
+Received message: 2.
+Sending reward 1; pulls = 318.
+Received message: 3.
+Sending reward 0; pulls = 319.
+Received message: 4.
+Sending reward 0; pulls = 320.
+Received message: 5.
+Sending reward 0; pulls = 321.
+Received message: 6.
+Sending reward 1; pulls = 322.
+Received message: 0.
+Sending reward 0; pulls = 323.
+Received message: 1.
+Sending reward 0; pulls = 324.
+Received message: 2.
+Sending reward 0; pulls = 325.
+Received message: 3.
+Sending reward 1; pulls = 326.
+Received message: 4.
+Sending reward 0; pulls = 327.
+Received message: 5.
+Sending reward 0; pulls = 328.
+Received message: 6.
+Sending reward 1; pulls = 329.
+Received message: 0.
+Sending reward 0; pulls = 330.
+Received message: 1.
+Sending reward 0; pulls = 331.
+Received message: 2.
+Sending reward 0; pulls = 332.
+Received message: 3.
+Sending reward 1; pulls = 333.
+Received message: 4.
+Sending reward 0; pulls = 334.
+Received message: 5.
+Sending reward 0; pulls = 335.
+Received message: 6.
+Sending reward 0; pulls = 336.
+Received message: 0.
+Sending reward 0; pulls = 337.
+Received message: 1.
+Sending reward 1; pulls = 338.
+Received message: 2.
+Sending reward 1; pulls = 339.
+Received message: 3.
+Sending reward 1; pulls = 340.
+Received message: 4.
+Sending reward 0; pulls = 341.
+Received message: 5.
+Sending reward 0; pulls = 342.
+Received message: 6.
+Sending reward 1; pulls = 343.
+Received message: 0.
+Sending reward 0; pulls = 344.
+Received message: 1.
+Sending reward 0; pulls = 345.
+Received message: 2.
+Sending reward 1; pulls = 346.
+Received message: 3.
+Sending reward 1; pulls = 347.
+Received message: 4.
+Sending reward 1; pulls = 348.
+Received message: 5.
+Sending reward 0; pulls = 349.
+Received message: 6.
+Sending reward 1; pulls = 350.
+Received message: 0.
+Sending reward 0; pulls = 351.
+Received message: 1.
+Sending reward 1; pulls = 352.
+Received message: 2.
+Sending reward 1; pulls = 353.
+Received message: 3.
+Sending reward 1; pulls = 354.
+Received message: 4.
+Sending reward 0; pulls = 355.
+Received message: 5.
+Sending reward 1; pulls = 356.
+Received message: 6.
+Sending reward 0; pulls = 357.
+Received message: 0.
+Sending reward 0; pulls = 358.
+Received message: 1.
+Sending reward 1; pulls = 359.
+Received message: 2.
+Sending reward 0; pulls = 360.
+Received message: 3.
+Sending reward 1; pulls = 361.
+Received message: 4.
+Sending reward 0; pulls = 362.
+Received message: 5.
+Sending reward 0; pulls = 363.
+Received message: 6.
+Sending reward 1; pulls = 364.
+Received message: 0.
+Sending reward 0; pulls = 365.
+Received message: 1.
+Sending reward 0; pulls = 366.
+Received message: 2.
+Sending reward 1; pulls = 367.
+Received message: 3.
+Sending reward 0; pulls = 368.
+Received message: 4.
+Sending reward 0; pulls = 369.
+Received message: 5.
+Sending reward 0; pulls = 370.
+Received message: 6.
+Sending reward 1; pulls = 371.
+Received message: 0.
+Sending reward 0; pulls = 372.
+Received message: 1.
+Sending reward 0; pulls = 373.
+Received message: 2.
+Sending reward 1; pulls = 374.
+Received message: 3.
+Sending reward 1; pulls = 375.
+Received message: 4.
+Sending reward 0; pulls = 376.
+Received message: 5.
+Sending reward 1; pulls = 377.
+Received message: 6.
+Sending reward 0; pulls = 378.
+Received message: 0.
+Sending reward 0; pulls = 379.
+Received message: 1.
+Sending reward 0; pulls = 380.
+Received message: 2.
+Sending reward 1; pulls = 381.
+Received message: 3.
+Sending reward 1; pulls = 382.
+Received message: 4.
+Sending reward 0; pulls = 383.
+Received message: 5.
+Sending reward 0; pulls = 384.
+Received message: 6.
+Sending reward 0; pulls = 385.
+Received message: 0.
+Sending reward 0; pulls = 386.
+Received message: 1.
+Sending reward 0; pulls = 387.
+Received message: 2.
+Sending reward 1; pulls = 388.
+Received message: 3.
+Sending reward 0; pulls = 389.
+Received message: 4.
+Sending reward 0; pulls = 390.
+Received message: 5.
+Sending reward 1; pulls = 391.
+Received message: 6.
+Sending reward 1; pulls = 392.
+Received message: 0.
+Sending reward 0; pulls = 393.
+Received message: 1.
+Sending reward 0; pulls = 394.
+Received message: 2.
+Sending reward 1; pulls = 395.
+Received message: 3.
+Sending reward 0; pulls = 396.
+Received message: 4.
+Sending reward 0; pulls = 397.
+Received message: 5.
+Sending reward 0; pulls = 398.
+Received message: 6.
+Sending reward 1; pulls = 399.
+Received message: 0.
+Sending reward 1; pulls = 400.
+Regret = 84
+Terminating.

@@ -1,0 +1,124 @@
+Assignment 1, CS747, Autumn 2016
+
+In this assignment, you must implement an agent to sample the arms of
+a stochastic multi-armed Bandit that yields Bernoulli rewards. The
+assignment considers a variant of the canonical setting discussed in
+class. Specifically, we allow the agent to sample the bandit arms
+``for free'' up to a certain number of pulls (the ``exploration
+horizon''); its regret is only measured beyond the exploration horizon
+and up to the horizon. The agent's objective is to minimise this
+regret. The setting considered in class corresponds to having an
+exploration horizon of zero.
+
+
+CODE
+
+You will find three directories in this code base. 
+
+* The server directory comprises the code to simulate a bandit, in
+  other words the ``environment''. The server waits for a client
+  (``agent'') to connect with it and start pulling arms in
+  sequence. For each pull, the server generates a 0/1 reward based on
+  the true mean of the arm pulled (known to the server, but unknown to
+  the client), which is communicated back to the agent. Each
+  communication from the server also contains the total number of
+  pulls performed so far. Thus, each server message is of the form
+  "reward,pulls". Agent/server communication happens through a TCP
+  connection. The server is coded in C++, and compiles into a binary
+  called bandit-environment on running ``make''. It is started with a
+  shell script called startserver.sh.
+
+* The data directory contains an example bandit instance with seven
+  arms. Do create and experiment with other instances for testing your
+  agent.
+
+* The client directory is provided to you as an example of what your
+  submission must achieve. The client is the agent that implements an
+  algorithm for sampling the bandit efficiently. The agent provided
+  here merely samples the arm in a round-robin fashion: you will have
+  to implement a more intelligent scheme in order to improve the
+  performance. The sample agent provided is coded in C++: it compiles
+  using ``make'' into a binary called bandit-agent.
+
+Run startexperiment.sh in this directory to run an experiment. Observe
+that it will start the server and the client in sequence. The server
+writes out a log file based on its interaction with the client--the
+per-step reward and regret are available from this log file.
+
+Run experiments with different random seeds, bandit instances,
+exploration horizons, and horizons to get a sense of the space of
+experiments.
+
+
+SUBMISSION
+
+You must submit a directory titled ``client'', which contains all the
+source and executable files of your agent. The directory must contain
+a script titled startclient.sh, which must take in command line
+arguments in the same sequence as in the sample client. You are free
+to build upon the sample C++ agent provided, or otherwise to implement
+an agent in any programming language of your choice. The hostname and
+port number must suffice for setting up a TCP connection with the
+server.
+
+Your code will be tested by running an experiment that calls
+startclient.sh in your directory: before you submit, make sure you can
+successfully run startexperiment.sh on the departmental machines
+(sl2-*.cse.iitb.ac.in).
+
+Include a file called notes.txt in your client directory, that (1)
+describes the algorithm your agent implements, and (2) provides
+references to any libraries and code snippets you have utilised. It is
+okay to use public code for parts of your agent such as the network
+communication module, or, say, libraries for random number generation
+and sorting. However, the logic used for sampling the arms must
+entirely be code that you have written.
+
+In summary: you must submit your client directory (compressed as
+client.tar.gz) through Moodle. The directory must contain
+startclient.sh, along with all the sources and executables for the
+agent, as well as a notes.txt file.
+
+
+EVALUATION
+
+Your agent will be tested on a number of bandit instances, with
+varying horizons and exploration horizons. For each such (instance,
+horizon, exploration horizon) configuration, a large number of runs
+(say 50-100) will be conducted by varying the random seed passed to
+the server and agent. The average regret over these runs will be
+recorded.
+
+On each run, the regret will be the difference between (1) the highest
+expected regret achievable in (horizon - explorationHorizon) pulls,
+which is the product of the highest mean and (horizon -
+explorationHorizon), and (2) the total reward accrued by the agent on
+pulls (explorationHorizon + 1) through horizon.
+
+The number of bandit arms will be between 2 and 50; the horizon will
+be between 1 and 10,000; the exploration horizon will be between 1 and
+(horizon - 1).
+
+Your marks on the assignment will be calculated by aggregating the
+performance of your agent across the different experiments. Thus, you
+must aim to develop an algorithm that works well with every possible
+bandit instance, exploration horizon, and horizon.
+
+The instructor may look at your source code and notes to corroborate
+the results obtained by your agent, and may also call you to a
+face-to-face session to explain your code.
+
+
+DEADLINE AND RULES
+
+Your submission is due by 11.55 p.m., Thursday, September 1.  You will
+get a score of zero if your code is not received by the deadline. 
+
+You must work alone on this assignment. Do not share any code (whether
+yours or code you have found on the Internet) with your classmates. Do
+not discuss the design of your agent with anybody else.
+
+You will not be allowed to alter your code in any way after the
+submission deadline. Before submission, make sure that it runs for a
+variety of experimental conditions on the sl2 machines.
+
