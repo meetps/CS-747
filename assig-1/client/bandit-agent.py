@@ -1,6 +1,8 @@
 import sys
 import socket
 import time
+import random
+
 
 error_str = """
     Usage :
@@ -36,8 +38,22 @@ if __name__ == '__main__':
         port = port
         s.connect((host, port))
 
+        arm_to_pull = 0
         for i in range(h):
-            print s.send(bytes(2))
-            time.sleep(2)
+            try:
+                s.send(bytes(random.randint(0, 4)))
+                print 'Sent arm to pull : ' + str(arm_to_pull)
+            except:
+                print 'Send Connection Error'
+
+            time.sleep(0.5)
+
+            try:
+                raw_message = s.recv(256).rstrip('\0')
+                receive_list = raw_message.replace(' ', '').split(',')
+                print 'Received Message : ' + raw_message
+            except:
+                print 'Receive Connection Error'
+            reward, n_pulls = int(receive_list[0]), int(receive_list[1])
 
         s.close
