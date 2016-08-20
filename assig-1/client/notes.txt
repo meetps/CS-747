@@ -1,0 +1,6 @@
+REFERENCES.txt
+
+1: A Survey of Online Experiment Design with the Stochastic Multi-Armed Bandit 
+		https://arxiv.org/pdf/1510.00757.pdf
+2: scipy.stats.beta : A beta continuous random variable.
+		http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html

@@ -10,6 +10,6 @@ randomSeed=$6
 
 #echo "Inside Client"
 
-cmd="./bandit-agent --numArms $numArms --randomSeed $randomSeed --horizon $horizon --explorationHorizon $explorationHorizon --hostname $hostname --port $port"
+cmd="python bandit-agent.py --numArms $numArms --randomSeed $randomSeed --horizon $horizon --explorationHorizon $explorationHorizon --hostname $hostname --port $port"
 #echo $cmd
 $cmd
