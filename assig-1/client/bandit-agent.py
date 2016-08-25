@@ -3,8 +3,6 @@ import socket
 import time
 
 from numpy import *
-from scipy.stats import beta
-
 
 error_str = """
     Usage :
@@ -42,8 +40,7 @@ class ThompsonSampling(object):
         """
         sampled_theta = []
         for i in range(self.n_arms):
-            dist = beta(self.prior_params[0]+self.rewards[i], self.prior_params[1]+self.trials[i]-self.rewards[i])
-            sampled_theta += [dist.rvs()]
+            sampled_theta.append(random.beta(self.prior_params[0]+self.rewards[i], self.prior_params[1]+self.trials[i]-self.rewards[i]))
         return sampled_theta.index(max(sampled_theta))
 
 
@@ -79,7 +76,7 @@ if __name__ == '__main__':
             except:
                 print 'Send Connection Error'
 
-            time.sleep(0.5)
+            time.sleep(0.05)
 
             try:
                 raw_message = s.recv(256).rstrip('\0')
