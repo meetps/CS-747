@@ -71,7 +71,7 @@ if __name__ == '__main__':
         for i in range(h):
             arm_to_pull = algorithm.select_arm()
             try:
-                s.send(bytes(int(arm_to_pull)))
+                s.send(str(arm_to_pull) + '\n')
                 print 'Sent arm to pull : ' + str(arm_to_pull)
             except:
                 print 'Send Connection Error'
@@ -79,7 +79,7 @@ if __name__ == '__main__':
             time.sleep(0.05)
 
             try:
-                raw_message = s.recv(256).rstrip('\0')
+                raw_message = s.recv(512).rstrip('\0')
                 receive_list = raw_message.replace(' ', '').split(',')
                 print 'Received Message : ' + raw_message
             except:
