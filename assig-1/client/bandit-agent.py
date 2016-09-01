@@ -15,34 +15,25 @@ error_str = """
     [--port port]
     """
 
+def update(trial_id, rewards, success):
+    """
+    Updates the state space based on received reward
+    """
+    trials[trial_id] = trials[trial_id] + 1
+    # Since rewards are bernoulli, its just 0 or 1
+    if (success):
+        rewards[trial_id] = rewards[trial_id] + 1
 
-class ThompsonSampling(object):
-    def __init__(self, n_arms=2, prior_params=(1.0, 1.0)):
-        self.trials = zeros(shape=(n_arms,), dtype=int)
-        self.rewards = zeros(shape=(n_arms,), dtype=int)
-        self.n_arms = n_arms
-        self.prior_params = prior_params
-
-    def update(self, trial_id, success):
-        """
-        Updates the state space based on received reward
-        """
-        self.trials[trial_id] = self.trials[trial_id] + 1
-        # Since rewards are bernoulli, its just 0 or 1
-        if (success):
-            self.rewards[trial_id] = self.rewards[trial_id] + 1
-
-    def select_arm(self):
-        """
-        Contructs beta distribution from the present state and
-        takes random sample from it returns the arm index with
-        the largest value.
-        """
-        sampled_theta = []
-        for i in range(self.n_arms):
-            sampled_theta.append(random.beta(self.prior_params[0]+self.rewards[i], self.prior_params[1]+self.trials[i]-self.rewards[i]))
-        return sampled_theta.index(max(sampled_theta))
-
+def select_arm(n_arms, prior_params, rewards, trials):
+    """
+    Contructs beta distribution from the present state and
+    takes random sample from it returns the arm index with
+    the largest value.
+    """
+    sampled_theta = []
+    for i in range(n_arms):
+        sampled_theta.append(random.beta(prior_params[0]+rewards[i], prior_params[1]+trials[i]-rewards[i]))
+    return sampled_theta.index(max(sampled_theta))
 
 def get_arg(arguments):
     numArms = int(arguments[2])
@@ -66,17 +57,19 @@ if __name__ == '__main__':
         port = port
         s.connect((host, port))
 
-        algorithm = ThompsonSampling(n_arms=n)
+        trials = zeros(shape=(n,), dtype=int)
+        rewards = zeros(shape=(n,), dtype=int)
+        prior_params = (1.0, 1.0)
 
         for i in range(h):
-            arm_to_pull = algorithm.select_arm()
+            arm_to_pull = select_arm(n, prior_params, rewards, trials)
             try:
                 s.send(str(arm_to_pull) + '\n')
                 print 'Sent arm to pull : ' + str(arm_to_pull)
             except:
                 print 'Send Connection Error'
 
-            time.sleep(0.05)
+            time.sleep(0.005)
 
             try:
                 raw_message = s.recv(512).rstrip('\0')
@@ -85,5 +78,5 @@ if __name__ == '__main__':
             except:
                 print 'Receive Connection Error'
             reward, n_pulls = int(receive_list[0]), int(receive_list[1])
-            algorithm.update(arm_to_pull, reward)
+            update(arm_to_pull, rewards, reward)
         s.close
