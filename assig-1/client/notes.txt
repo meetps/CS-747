@@ -1,6 +1,49 @@
-REFERENCES.txt
+## ALGORITHM 
 
-1: A Survey of Online Experiment Design with the Stochastic Multi-Armed Bandit 
+Thompson Sampling 
+
+### Brief explanation 
+
+This algorithm explores the distrubution of the arms with a beta prior and updates the prior after every pull for each arm. Then it randomly samples values from the distribution and picks the arm with max val. In this completely randomized fashion it is able to explore the entire search space quickly with min cummulative regret. 
+
+### Pseudo code : 
+
+for arm in n_arms: 
+	for trial in n_trials:
+		for i in len(n_arms): 
+			random_sample[i] = beta(Si + 1, Fi + 1)
+		arm_to_pull = max(random_sample)
+	if reward = 1:
+		Si(t) = Si(t) + 1
+	else:  
+		Fi(t) = Fi(t) + 1
+
+#### Reason : 
+
+* Best Cummulative Regret for large horizon 
+* It takes entire distribution of each arm into consideration unlike UCB where only the upper confidence bounds are considered.
+
+## REFERENCES
+
+* 1: A Survey of Online Experiment Design with the Stochastic Multi-Armed Bandit 
 		https://arxiv.org/pdf/1510.00757.pdf
-2: scipy.stats.beta : A beta continuous random variable.
+* 2: scipy.stats.beta : A beta continuous random variable.
 		http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html
+
+## Additional Notes 
+
+### Running code 
+
+As per the instructions my code runs as per the `startclient.sh` bash file. However if there is any other process of `bandit-environ` running on the system listening to the same port, the code fails to bind to the socket.
+
+Thus I used this to kill all the bandit-environments before launching my code:
+
+sudo kill -9 `sudo netstat -plten | awk '{print $9}' | sed "s/\// /g" | grep bandit | awk '{print $1}'`
+
+This finds all bandit environment processes and kills them. 
+
+Also one thing that I noticed is that calling both the server and client from the same shell script causes some problems in socket binding.
+
+However my code runs perfectly when server and client are called in separate terminals.
+
+I have also supplied a python `startexperiment.py` script with the same interface as `startexperiment.sh` but it kills both the client and server at the end of the task. 
