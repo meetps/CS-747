@@ -1,0 +1,127 @@
+Assignment 2, CS747, Autumn 2016
+
+
+In this assignment, you must implement a planning algorithm for
+computing an optimal policy for a given MDP.
+
+
+MDP FORMAT
+
+The input to your planner will be an MDP, provided as a text file. The
+format of the file will be as follows.
+
+Number of states
+Number of actions
+Reward function
+Transition function
+Discount factor
+
+The number of states S and the number of actions A will be integers
+greater than 0 and less than 100. Assume that the states are numbered
+0, 1, ..., S - 1, and the actions numbered 0, 1, ..., A - 1. The
+reward function will be provided over SA lines, each line containing S
+entries. Each entry corresponds to R(s, a, s'), wherein state s,
+action a, and state s' are being iterated in sequence from 0 to S - 1,
+0 to A - 1, and 0 to S - 1, respectively. A similar scheme is adopted
+for the transition function T. Each reward will lie between -1 and 1
+(both included). The discount factor is a real number between 0
+(included) and 1 (exluded).
+
+Below is a snippet of python code that is used to generate MDP files.
+      
+print S
+print A
+
+for s in range(0, S):
+    for a in range(0, A):
+        for sPrime in range(0, S):
+            print str(R[s][a][sPrime]) + "\t",
+
+        print "\n",
+
+for s in range(0, S):
+    for a in range(0, A):
+        for sPrime in range(0, S):
+            print str(T[s][a][sPrime]) + "\t",
+
+        print "\n",
+
+print gamma
+
+In the data directory enclosed, you will find three sample MDP files.
+
+
+OUTPUT
+
+Given an MDP, your planner must compute the optimal value function V* and
+an optimal policy pi*. Its output, written to standard output, must be
+in the following format.
+
+V*(0)	pi*(0)
+V*(1)	pi*(1)
+.
+.
+.
+V*(S - 1)	pi*(S - 1)
+
+In the data directory enclosed, you will find three output files
+corresponging to the MDP files, which have solutions in the format
+above.
+
+Since your output will be checked automatically, make sure you have
+nothing printed to stdout other than the S lines as above in
+sequence. If the testing code is unable to parse your output, you will
+not receive any marks.
+
+
+SUBMISSION
+
+You must submit a directory titled ``planner'', which contains all
+your source and executable files. The directory must contain a script
+titled planner.sh, which must take in exactly one command line
+argument corresponding to an MDP. For testing your code, the following
+command will be used from your planner directory.
+
+./planner.sh mdpFileName
+
+mdpFileName will include the full path. Before you submit, make sure
+you can successfully run planner.sh on the departmental (sl2)
+machines.
+
+Include a file called notes.txt in your planner directory, that (1)
+describes the algorithm your planner implements, and (2) provides
+references to any libraries and code snippets you have utilised. It is
+okay to use libraries for data structures and for operations such as
+sorting. However, the logic used for planning must entirely be code
+that you have written.
+
+In summary: you must submit your planner directory (compressed as
+planner.tar.gz) through Moodle. The directory must contain planner.sh,
+along with all the sources and executables for the agent, as well as a
+notes.txt file.
+
+
+EVALUATION
+
+Your planner will be tested on a large number of MDPs. Your task is to
+ensure that it prints out the correct solution (V* and pi*) in each
+case. Your marks on the assignment will be calculated by aggregating
+the performance of your planner on different MDPs.
+
+The instructor may look at your source code and notes to corroborate
+the results obtained by your agent, and may also call you to a
+face-to-face session to explain your code.
+
+
+DEADLINE AND RULES
+
+Your submission is due by 11.55 p.m., September 25, 2016.  You will
+get a score of zero if your code is not received by the deadline.
+
+You must work alone on this assignment. Do not share any code (whether
+yours or code you have found on the Internet) with your classmates.
+
+You will not be allowed to alter your code in any way after the
+submission deadline. Before submission, make sure that it runs as
+expected on the sl2 machines.
+

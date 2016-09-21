@@ -1,7 +1,9 @@
 """To execute, run:
 python3 generateMDP.py > mdp.txt
 """
-import random
+import random, sys
+
+random.seed(sys.argv[1])
 
 S = 100
 A = 100

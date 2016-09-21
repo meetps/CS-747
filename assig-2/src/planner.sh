@@ -1,5 +1,5 @@
 #!/bin/sh
 
 filePath=$1
-cmd="python mdp_planner.py $filePath"
+cmd="python policy_iteration.py $filePath"
 $cmd
