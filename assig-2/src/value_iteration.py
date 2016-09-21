@@ -1,11 +1,14 @@
 """
-MDP Planner
+File : MDP Planner | Value Iteration
+Author : Meet Pragnesh Shah
+Roll : 13D070003
 """
 
 import sys
 import numpy as np
 
 from multiprocessing import Pool
+from operator import add, mul
 
 d_type = 'double'
 
@@ -35,46 +38,22 @@ def readMDP(file_path=None):
     return rewards, transistion_p, nstates, nactions, gamma
 
 def getValueIndex(i):
-    index = 0
-    max_a = 0.0
-    for j in range(A):
-        sum_a = 0.0
-        for k in range(S):
-            sum_a += T[i][j][k] * (R[i][j][k] + df * V_prev[k])
-        if max_a < sum_a:
-            max_a = sum_a
-            index = j
+    V_a = [sum(map(mul,map(add,[df * value for value in V],reward),T[i][action])) for action,reward in enumerate(R[i])]
+    max_a = max(V_a)
+    index = V_a.index(max_a)
     return {'V':max_a, 'T':index}
 
-def planMDP(V_prev,V):
+def planMDP():
+    global V
+    global V_prev
     eps = 0.000001
     count = 0
     while True:
-        # print count, np.mean(abs(V_prev - V))
-        count += 1
-    # for n in range(10):
         V_prev = np.copy(V)
-        p = Pool(10)
-        d = p.map(getValueIndex, range(S))
-        V = [l['V'] for l in d]
-        print V
-        P = [l['T'] for l in d]
-        # V = d['V']
-        # P = d['P']
-        # for i in range(S):
-        #     index = 0
-        #     max_a = 0.0
-        #     for j in range(A):
-        #         sum_a = 0.0
-        #         for k in range(S):
-        #             sum_a += T[i][j][k] * (R[i][j][k] + df * V_prev[k])
-        #         if max_a < sum_a:
-        #             max_a = sum_a
-        #             index = j
-        #     V[i], p[i] = max_a
-            # P[i] = index
+        d = map(getValueIndex, range(S))
+        V, P = np.asarray([v['V'] for v in d]), [p['T'] for p in d]
         if abs(V_prev - V).all() < eps:
-            return V, P
+            return V.flatten(), P
 
 def printOptimalPolicy(v, pi):
     for i in range(len(v)):
@@ -91,7 +70,7 @@ if __name__ == '__main__':
     V_prev = np.zeros((S,1), dtype=d_type)
 
     # Obtain optimal policy
-    v_star, pi_star = planMDP(V_prev,V)
+    v_star, pi_star = planMDP()
 
     # Print Optimal policy into file & CLI
     printOptimalPolicy(v_star, pi_star)
