@@ -41,7 +41,7 @@ def planMDP(mdp=None):
     eps = 0.000001
     count = 0
     while True:
-        print count
+        # print count
         count += 1
     # for n in range(10):
         V_prev = np.copy(V)
@@ -62,7 +62,7 @@ def planMDP(mdp=None):
 
 def printOptimalPolicy(v, pi):
     for i in range(len(v)):
-        print v[i], pi[i]
+        print str(v[i][0]) + '\t' + str(pi[i][0])
 
 if __name__ == '__main__':
     mdp_file_path = sys.argv[1]
