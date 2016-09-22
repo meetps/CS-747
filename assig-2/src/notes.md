@@ -63,3 +63,6 @@ If you want to run value iteration (slower in such cases) / policy iteration exp
 
 * `python value_iteration.py <filePath>`
 * `python policy_iteration.py <filePath>`
+
+### Additional Notes
+ It takes about **24s** on an average find the optimal policy for a MDP with |S|=100 and |A|=100.
