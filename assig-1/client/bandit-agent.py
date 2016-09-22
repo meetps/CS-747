@@ -53,7 +53,7 @@ if __name__ == '__main__':
         n, s, h, eh, host, port = get_arg(sys.argv)
 
         s = socket.socket(socket.AF_INET)
-        host = socket.gethostname()
+        #host = socket.gethostname()
         port = port
         s.connect((host, port))
 

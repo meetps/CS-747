@@ -76,7 +76,7 @@ def planMDP():
 
 def printOptimalPolicy(v, pi):
     for i in range(len(v)):
-        print str(v[i]) + '\t' + str(pi[i])
+        print str(format(v[i],'0.6f')) + '\t' + str(pi[i])
 
 if __name__ == '__main__':
     mdp_file_path = sys.argv[1]
