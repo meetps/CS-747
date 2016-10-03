@@ -8,6 +8,6 @@
 
 ### Assignment 2
 
-* Markov Decision Process
+* Markov Decision Process Planning
   * Value Iteration
   * Policy Iteration
