@@ -35,10 +35,10 @@ For the given MDP, since we are given the reward only on reaching the terminal s
 
 Following plots with all parameters except the `n_states`, we can clearly see that **replacing traces > accumulating traces** for relatively high alphas
 
-![time_vs_alpha_short](../imgs/5.png)
-![time_vs_alpha_medium](../imgs/8.png)
-![time_vs_alpha_long](../imgs/10.png)
-![time_vs_alpha_ver_long=10](../imgs/20.png)
+![time_vs_alpha_short](imgs/5.png)
+![time_vs_alpha_medium](imgs/8.png)
+![time_vs_alpha_long](imgs/10.png)
+![time_vs_alpha_ver_long=10](imgs/20.png)
 
   
 ### Conclusion 
@@ -47,10 +47,10 @@ For a given `gamma`, `alpha` and `epsilon` replacing traces outperforms accumula
 
 In all these plots we increase the value of `gamma` from `0.5` to `0.9` in steps of `0.1` : 
 
-![time_vs_alpha_gamma=0.6](../imgs/0.6.png)
-![time_vs_alpha_gamma=0.7](../imgs/0.7.png)
-![time_vs_alpha_gamma=0.8](../imgs/0.8.png)
-![time_vs_alpha_gamma=0.9](../imgs/0.9.png)
+![time_vs_alpha_gamma=0.6](imgs/0.6.png)
+![time_vs_alpha_gamma=0.7](imgs/0.7.png)
+![time_vs_alpha_gamma=0.8](imgs/0.8.png)
+![time_vs_alpha_gamma=0.9](imgs/0.9.png)
 
 
 ### References

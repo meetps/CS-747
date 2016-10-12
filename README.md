@@ -11,3 +11,9 @@
 * Markov Decision Process Planning
   * Value Iteration
   * Policy Iteration
+
+### Assignment 3
+
+* SARSA Lambda 
+  * Trace accumulation
+  * Trace replacement
