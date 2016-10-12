@@ -95,8 +95,7 @@ def run_sarsa_exp(n_trials=100, n_episodes=50):
     plt.xlabel('alpha')
     plt.ylabel('n_Steps to terminal state')
     # plt.show()
-    # plt.savefig('../imgs/'  + str(term_state) + ".jpg")
-    plt.savefig('../imgs/'  + str(gamma) + ".jpg")
+    plt.savefig('n_states_' + str(term_state) + '_gamma' + str(gamma) + ".jpg")
 
 if __name__ == '__main__':
     run_sarsa_exp(100,50)
