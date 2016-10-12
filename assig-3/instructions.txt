@@ -1,0 +1,33 @@
+Programming Assignment 3, CS747, Autumn 2016
+
+Provide a solution to Exercise 7.7 in the textbook by Sutton and Barto (1998):
+
+    http://webdocs.cs.ualberta.ca/~sutton/book/ebook/node80.html.
+
+    The exercise is based on Example 7.5. Implement two versions of Sarsa(lambda), one with accumulating traces, and the other with replacing traces. Run both algorithms with lambda = 0.9, and different values of (time-independent) learning rate alpha, on the MDP described in the example (set the number of states and the discount factor as you see fit). You must provide empirical evidence--in the form of one or more suitable plots--to demonstrate the advantage of using replacing traces.
+
+    You must submit:
+
+    1. Your code for implementing the task;
+    2. Code for your Sarsa(lambda) agents;
+    3. A script to run your simulations and gather data;
+    4. Plots of your agent's performance;
+    5. A README file describing how to run your code and obtain the plots; and
+    6. A report presenting your observations from these experiments (as a pdf file).
+
+    Submit all these files through Moodle, as a compressed directory named submission.tar.gz.
+
+    This assignment is meant to give you the experience of developing both agent and environment, and to get familiar with Sarsa and eligibility traces. Feel free to be creative and test related hypotheses you might
+    find interesting.
+
+
+
+    Your observations (under 6) must explain the patterns visible in the plots, and report any particular issues you encountered while experimenting with this task. Don't hesitate to include details and analysis that go beyond the scope of the exercise. It is the mark of good scientific writing to provide complete details of your experiments (so that they can be reproduced by the reader), while, at the same time, furnishing an instructive high-level picture. 
+
+    Your marks will be determined by the plots you provide as evidence that replacing traces do prove advantageous on this task, as well as the accompanying analysis. Shoddy writing will incur a penalty: watch out for typos, punctuation, and grammar.
+
+    Your submission is due by 11.55 p.m., Monday, October 10. You will get a score of zero if your submission is not received by the deadline.
+
+    You must work alone on this assignment. Do not share any code (whether yours or code you have found on the Internet) with your classmates.
+
+    You will not be allowed to alter your code, plots, or report in any way after the submission deadline.

@@ -1,13 +1,20 @@
+"""
+File : Sarsa with Eligibility Traces | Accumulation vs Replacement
+Author : Meet Pragnesh Shah
+Roll : 13D070003
+"""
+
+import sys
 import random
 import numpy as np
 from itertools import product
 from matplotlib import pyplot as plt
 
-n_states       = 5
+n_states       = int(sys.argv[1])
+gamma          = float(sys.argv[2])
+term_state     = n_states
 n_actions      = 2
 state          = 0
-term_state     = n_states
-
 
 def apply_action(action):
     global state
@@ -25,8 +32,9 @@ def eps_greedy_action(epsilon, p):
         return np.random.choice(np.where(p == np.amax(p))[0])
 
 
-def sarsa(n_episodes=50, Lambda=0.9, gamma=0.9, epsilon=0.05, alpha=0.05, accumulate_trace=False):
+def sarsa(n_episodes=50, Lambda=0.9, epsilon=0.05, alpha=0.1, accumulate_trace=False):
     global state
+    global gamma
 
     state_actions = list(product(range(n_states+1), range(n_actions)))
     Q_val         = np.random.random([n_states+1, n_actions])
@@ -66,8 +74,8 @@ def exp_instance(n_trials, n_episodes, accumulate_trace):
     results = np.array([])
     for alpha in alphas:
         res = []
-        for i in xrange(n_trials):
-            t = sarsa(n_episodes=n_episodes, alpha=alpha, accumulate_trace=accumulate_trace, gamma=0.9, epsilon=0.05, Lambda=0.9)
+        for i in range(n_trials):
+            t = sarsa(n_episodes=n_episodes, alpha=alpha, accumulate_trace=accumulate_trace, epsilon=0.05, Lambda=0.9)
             res.append(np.mean(t))
         if results.shape[0] == 0:
             results = np.array([alpha, np.mean(res)])
@@ -75,18 +83,20 @@ def exp_instance(n_trials, n_episodes, accumulate_trace):
             results = np.vstack([results, [alpha, np.mean(res)]])
     return results
 
-def run_sarsa_exp(n_trials=100, n_episodes=20):
+def run_sarsa_exp(n_trials=100, n_episodes=50):
     trace_replaced    = exp_instance(n_trials, n_episodes, accumulate_trace=False)
     trace_accumulated = exp_instance(n_trials, n_episodes, accumulate_trace=True)
 
-    plt.plot(trace_replaced[:, 0], trace_replaced[:, 1], label='Replaced Traces')
-    plt.plot(trace_accumulated[:, 0], trace_accumulated[:, 1], label='Accumulated Traces')
+    plt.plot(trace_replaced[:, 0], trace_replaced[:, 1], label='Replaced Traces', c='b')
+    plt.plot(trace_accumulated[:, 0], trace_accumulated[:, 1], label='Accumulated Traces', c='r')
 
     plt.legend()
-    plt.title(str(n_episodes) + ' episodes stochastically averaged ' + str(n_trials) + ' times.')
+    plt.title('n_states = ' + str(n_states) + " gamma = " + str(gamma) + " | " + str(n_episodes) + ' episodes stochastically averaged ' + str(n_trials) + ' times.')
     plt.xlabel('alpha')
     plt.ylabel('n_Steps to terminal state')
-    plt.show()
+    # plt.show()
+    # plt.savefig('../imgs/'  + str(term_state) + ".jpg")
+    plt.savefig('../imgs/'  + str(gamma) + ".jpg")
 
 if __name__ == '__main__':
-    run_sarsa_exp(100,20)
+    run_sarsa_exp(100,50)
